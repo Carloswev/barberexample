@@ -1,0 +1,121 @@
+/* Estilos do cabeçalho */
+header {
+    background-color: #000; /* Preto */
+    color: #fff; /* Branco */
+    padding: 15px 0;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff; /* Branco */
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #d4af37; /* Dourado */
+    color: #000; /* Preto */
+}
+
+.social-icons a {
+    color: #fff; /* Branco */
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #d4af37; /* Dourado */
+}
+
+.menu-icon {
+    display: none; /* Oculta por padrão */
+    cursor: pointer;
+}
+
+/* Estilos da Sidebar */
+.sidebar {
+    position: fixed;
+    left: -250px; /* Começa fora da tela */
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #333; /* Fundo escuro */
+    color: #fff;
+    transition: left 0.3s; /* Animação ao abrir */
+    padding: 20px;
+    z-index: 1000; /* Para ficar acima de outros elementos */
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    color: #fff; /* Branco */
+    text-decoration: none;
+}
+
+.sidebar nav ul li a:hover {
+    color: #d4af37; /* Dourado */
+}
+
+/* Estilos para exibir a barra lateral */
+.sidebar.active {
+    left: 0; /* Mostra a sidebar */
+}
+
+/* Estilos do footer */
+footer {
+    background-color: #000; /* Preto */
+    color: #fff; /* Branco */
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Mostra o ícone do menu em telas menores */
+    }
+    .nav-links {
+        display: none; /* Esconde as links do menu em telas menores */
+    }
+}
